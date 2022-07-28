@@ -8,7 +8,7 @@
   const clearVal = (e) => {
     setInterval(() => {
       e.target.value = null;
-    }, 3000);
+    }, 1000);
   };
 </script>
 
@@ -50,7 +50,7 @@
   <label for="multi">Multiplikation</label>
 </fieldset>
 
-<div class="result">
+<div class="result" transition:fade>
   <h1 class:red={count === 0}>{count}</h1>
 </div>
 
