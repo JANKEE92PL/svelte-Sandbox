@@ -50,8 +50,8 @@
   <label for="multi">Multiplikation</label>
 </fieldset>
 
-<div class="result" transition:fade>
-  <h1 class:red={count === 0}>{count}</h1>
+<div class="result">
+  <h1 class:red={count === 0}  transition:fade>{count}</h1>
 </div>
 
 <button on:click={() => (count = 0)}>Reset</button>
